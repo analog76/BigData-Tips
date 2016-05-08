@@ -111,5 +111,5 @@ To increase the connection time out, create a json file with increase_19_alert.j
 
 Run the following command to update the json file to the ambari-server.
 
-    curl -H "X-Requested-By: ambari" -X PUT -u admin:admin http://localhost:8080/api/v1/clusters/dz/alert_definitions/19 -d @update_alert.json
+    curl -H "X-Requested-By: ambari" -X PUT -u admin:admin http://localhost:8080/api/v1/clusters/dz/alert_definitions/19 -d @increase_19_alert.json
 
