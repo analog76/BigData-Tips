@@ -70,3 +70,32 @@ Steps to generate heap dump.
 	17960 interned Strings occupying 1663704 bytes.
 
 
+
+To find histogram of this file 
+
+
+ 	jmap -histo:live 14177
+
+	 num     #instances         #bytes  class name
+	----------------------------------------------
+	   1:         33984        3414648  [C
+	   2:          1279         874512  [B
+	   3:         33681         808344  java.lang.String
+	   4:         17406         556992  java.util.HashMap$Node
+	   5:          4490         510496  java.lang.Class
+	   6:          3763         295656  [Ljava.lang.Object;
+	   7:          7898         252736  java.util.Hashtable$Entry
+	   8:          1716         233504  [Ljava.util.HashMap$Node;
+	   9:          6373         203936  java.util.concurrent.ConcurrentHashMap$Node
+	  10:          5530         158408  [Ljava.lang.String;
+	  11:          2781         129608  [I
+	  12:          1338         117744  java.lang.reflect.Method
+	  13:          5876          94016  java.lang.Object
+	  14:          1886          90528  java.util.HashMap
+	  15:          1215          77760  java.net.URL
+	  ...
+	  ...
+	  ...
+	  ...
+	  
+
