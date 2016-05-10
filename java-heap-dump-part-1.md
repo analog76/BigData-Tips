@@ -71,7 +71,7 @@ Steps to generate heap dump.
 
 
 
-To find histogram of this file 
+To find histogram of the processes.   
 
 
  	jmap -histo:live 14177
